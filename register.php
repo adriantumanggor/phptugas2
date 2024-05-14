@@ -10,7 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $check_username_query = "SELECT * FROM admin WHERE username='$username'";
     $check_username_result = mysqli_query($conn, $check_username_query);
     if (mysqli_num_rows($check_username_result) > 0) {
-        $_SESSION['username'] = $username;
         echo '<script>
                 alert("Username ' . $username . ' telah digunakan.");
                 window.location.href = "register.php";
