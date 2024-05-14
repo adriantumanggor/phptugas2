@@ -1,0 +1,96 @@
+/* styles.css */
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    height: 100%;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 10px; /* Padding untuk memberi ruang untuk label menu */
+}
+
+#content {
+    padding: 50px;
+}
+
+.menu-list {
+    padding: 20px;
+}
+
+.menu-label {
+    padding: 10px;
+    margin-top: 0;
+}
+
+.right {
+    background-color: #1c2333;
+    min-height: 100vh; /* Set minimum tinggi body ke tinggi viewport */
+    display: flex;
+    flex-direction: column; /* Gunakan flexbox untuk menyesuaikan konten */
+}
+
+li {
+    font-size: x-large;
+}
+
+/* styles.css */
+.custom-menu a:hover {
+    background-color: #f3f3f3; /* Sesuaikan warna latar belakang hover */
+    color: black;
+}
+
+/* Efek aktif untuk item menu-list */
+.custom-menu a.is-active {
+    background-color: #3273dc; /* Sesuaikan warna latar belakang aktif */
+    color: #ffffff; /* Sesuaikan warna teks aktif */
+}
+
+
+.profile-picture-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid #ccc; /* Tambahkan border */
+  }
+  
+  .profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-picture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 50%;
+  }
+  
+  .profile-picture-container:hover .profile-picture-overlay {
+    opacity: 1;
+  }
+  
+  .profile-picture-overlay i {
+    font-size: 24px;
+  }
+  
+
